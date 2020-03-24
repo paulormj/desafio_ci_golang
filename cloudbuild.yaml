@@ -6,6 +6,6 @@ steps:
 
 - id: "test"
   name: 'gcr.io/cloud-builders/go'
-  args: ['test', 'somat_test.go']
+  args: ['go','test', 'somat_test.go']
 
 images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
