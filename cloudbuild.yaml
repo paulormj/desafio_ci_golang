@@ -8,4 +8,4 @@ steps:
   name: 'mirror.gcr.io/library/golang'
   args: ['go','test', '-v']
 
-images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
+#images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
