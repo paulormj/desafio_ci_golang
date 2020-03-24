@@ -1,0 +1,9 @@
+steps:
+- id: "Build GO"
+  name: 'mirro.gcr.io/library/golang'
+  env: ['GO111MODULE=on']
+  args: ['go','build','./...']
+
+- id: "test"
+  name: 'gcr.io/cloud-builders/go'
+  args: ['test', './...']
