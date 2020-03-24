@@ -2,10 +2,10 @@ steps:
 - id: "Build GO"
   name: 'mirror.gcr.io/library/golang'
   env: ['GO111MODULE=on']
-  args: ['go','build','./...']
+  args: ['go','build','soma.go']
 
 - id: "test"
   name: 'gcr.io/cloud-builders/go'
-  args: ['test', './...']
+  args: ['test', 'somat_test.go']
 
 images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
