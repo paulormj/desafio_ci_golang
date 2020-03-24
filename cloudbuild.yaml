@@ -9,5 +9,5 @@ steps:
   args: ['go','test', '-v']
 
 #images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
-images: ['gcr.io/$PROJECT_ID/custom-script-test']
-#- 'gcr.io/$PROJECT_ID/docker-compose:latest'
+images: 
+  - 'gcr.io/$PROJECT_ID/desafio-ci-test-golang'
