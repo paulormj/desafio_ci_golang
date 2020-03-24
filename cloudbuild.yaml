@@ -6,6 +6,6 @@ steps:
 
 - id: "test"
   name: 'mirror.gcr.io/library/golang'
-  args: ['go','test', 'soma_test.go']
+  args: ['go','test', '-v']
 
 images: ['gcr.io/$PROJECT_ID/desafio-ci-test-golang']  
